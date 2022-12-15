@@ -1,0 +1,147 @@
+@import "../utils/variables";
+
+@mixin row-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin column-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+@mixin flex-end {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+@mixin font-property {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@mixin font-property-2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $color-white-2;
+}
+
+@mixin font-property-3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $color-white-2;
+}
+
+@mixin font-property-4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $color-white-2;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+
+@mixin grid-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@mixin grid-xsmall {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+
+
+// MAP GET FUNCTION 
+$breakpoints: (
+    xsmall:350px,
+    mobile:599px,
+    tablette:768px,
+    screen-normal:992px,
+    desktop:1600px,
+    xlarge:2500px
+);
+
+@mixin mobile-only {
+    @media screen and (max-width:map-get($breakpoints, mobile)) and (min-width:map-get($breakpoints, tablette)) {
+        @content;
+
+    }
+}
+
+@mixin tablet-only {
+    @media screen and (max-width:map-get($breakpoints, tablette)) and (min-width:map-get($breakpoints, mobile)) {
+        @content;
+
+    }
+}
+
+
+@mixin desktop-only {
+    @media screen and (max-width:map-get($breakpoints, desktop)) and (min-width:map-get($breakpoints, tablette)) {
+        @content;
+
+    }
+}
+
+@mixin desktop-tablet {
+    @media screen and (max-width:map-get($breakpoints, desktop)) and (min-width:map-get($breakpoints, mobile)) {
+        @content;
+
+    }
+}
+
+@mixin normal {
+    @media screen and (max-width:map-get($breakpoints, desktop)) and (min-width:map-get($breakpoints, screen-normal)) {
+        @content;
+
+    }
+}
+
+@mixin desktop-large {
+    @media screen and (max-width:map-get($breakpoints, xlarge)) and (min-width:1600px) {
+        @content;
+
+    }
+}
+
+@mixin xsmall {
+    @media screen and (max-width:map-get($breakpoints, xsmall)) {
+        @content;
+
+    }
+}
+
+
+@mixin tablet-mobil {
+    @media screen and (max-width:map-get($breakpoints, tablette)) {
+        @content;
+
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width:map-get($breakpoints, screen-normal)) {
+        @content;
+
+    }
+}
