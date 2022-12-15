@@ -1,0 +1,18 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.footer {
+    position: absolute;
+    background: $color-black;
+    height: auto;
+    width: 100vw;
+    padding: $padding-large;
+    @include column-center;
+
+    &-text {
+        color: $color-white;
+        @include font-property-4;
+    }
+
+
+}

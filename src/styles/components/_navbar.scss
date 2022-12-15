@@ -1,0 +1,28 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+
+.navbar {
+    @include row-space-between;
+    margin: $margin-medium 10rem $margin-medium 10rem;
+
+    &_img {
+        width: 10rem;
+    }
+
+    &_ul {
+        @include row-space-between;
+        @include font-property;
+        gap: 5rem;
+
+        &_li_a {
+            color: $color-primary;
+        }
+    }
+
+    @include tablet-mobil {
+        @include column-space-between;
+        gap: 3rem;
+    }
+
+}
