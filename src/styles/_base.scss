@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+P {
+    font-size: 1.4rem;
+}
+
+
+a {
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        text-decoration: none;
+
+    }
+}
+
+ul li {
+    list-style-type: none;
+}
