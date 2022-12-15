@@ -8,12 +8,12 @@ const Navbar = () => {
       <img src={Logo} alt="navbar-logo-kasa" className="navbar_img" />
       <ul className="navbar_ul">
         <li className="navbar_ul_li">
-          <NavLink href="/" className="navbar_ul_li_a">
+          <NavLink href="/home" className="navbar_ul_li_a">
             Accueil
           </NavLink>
         </li>
         <li className="navbar_ul_li">
-          <NavLink href="/About" className="navbar_ul_li_a">
+          <NavLink href="/about" className="navbar_ul_li_a">
             A Propos
           </NavLink>
         </li>

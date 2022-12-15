@@ -1,0 +1,41 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.home-bg {
+    position: relative;
+    margin: 0 $margin-large 0 $margin-large;
+
+    @include tablet-mobil {
+        margin: 0 $margin-large 0 $margin-large !important;
+    }
+
+    &-img {
+        position: relative;
+        text-align: center;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: brightness(60%);
+        border-radius: $border-small;
+
+        @include tablet-mobil {
+            font-size: 1.5rem;
+            height: 20rem;
+            width: 100%;
+
+        }
+    }
+
+    &-p {
+        @include font-property-2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include tablet-mobil {
+            @include font-property-3;
+        }
+
+    }
+}
