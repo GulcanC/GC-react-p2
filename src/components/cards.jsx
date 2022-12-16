@@ -3,7 +3,7 @@ import React from "react";
 const Cards = ({ id, image, title }) => {
   return (
     <div>
-      <div id={id} className="home-card-section ">
+      <div id={id} className="home-card-section">
         <img
           src={image}
           alt="cardImages"
