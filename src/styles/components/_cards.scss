@@ -3,7 +3,12 @@
 
 .home-card {
     position: relative;
-    @include grid;
+
+
+    @include desktop-xlarge {
+        @include grid;
+
+    }
 
     @include desktop {
         @include grid-small;
