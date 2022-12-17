@@ -5,12 +5,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 5rem
 }
 
 @mixin column-space-between {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -69,7 +70,14 @@
     gap: 2rem;
 }
 
-
+@mixin arrow {
+    position: absolute;
+    font-size: 3rem;
+    color: $color-primary;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
 
 // MAP GET FUNCTION 
 $breakpoints: (
