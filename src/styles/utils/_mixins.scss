@@ -8,11 +8,27 @@
     gap: 5rem
 }
 
+@mixin row-space-between-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
 @mixin column-space-between {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+@mixin column-flex-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
 }
 
 @mixin column-center {
@@ -38,6 +54,20 @@
     font-size: 2.5rem;
     font-weight: 800;
     color: $color-white-2;
+}
+
+@mixin font-property-main-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $color-primary;
+
+}
+
+@mixin font-property-main-location {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-primary;
+
 }
 
 @mixin font-property-3 {

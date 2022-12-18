@@ -1,0 +1,27 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.image {
+    &-info {
+        @include row-space-between-start;
+        margin: 3rem 8.7rem;
+
+        &-left {
+            @include column-flex-start;
+        }
+
+    }
+
+    &-title {
+        @include font-property-main-title;
+    }
+
+    &-location {
+        @include font-property-main-location;
+    }
+
+    &-tags {
+        @include column-space-between;
+        gap: 5rem;
+    }
+}

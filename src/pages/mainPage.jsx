@@ -16,9 +16,30 @@ const MainPage = () => {
   return (
     <>
       {imageInf && (
-        <div>
+        <>
           <Slide slides={imageInf.pictures} />
-        </div>
+          <div className="image-info">
+            <div className="image-info-left">
+              <h3 className="image-title">{imageInf.title}</h3>
+              <p className="image-location">{imageInf.location}</p>
+              <ul className="image-tags">
+                {imageInf.tags.map((tag, index) => (
+                  <li key={index}>{tag}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="image-info-right">
+              <p className="host-name">{imageInf.host.name}</p>
+              <img
+                src={imageInf.host.picture}
+                alt=""
+                className="host-picture"
+              />
+              <span className="host-rating">{imageInf.rating}</span>
+            </div>
+          </div>
+        </>
       )}
     </>
   );
