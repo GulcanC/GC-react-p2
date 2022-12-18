@@ -1,0 +1,41 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    padding: 0 9rem;
+
+    &-arrow-left {
+        @include arrow;
+        top: 50%;
+        left: 10%;
+
+        @include desktop {
+            left: 20%;
+        }
+    }
+
+    &-arrow-right {
+        @include arrow;
+        top: 50%;
+        right: 10%;
+
+        @include desktop {
+            right: 20%;
+        }
+    }
+
+    &-slide-active {
+        @include slideResponsive;
+    }
+
+    &-slide {
+        @include slideResponsive;
+        display: none;
+
+
+    }
+}

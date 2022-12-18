@@ -70,6 +70,16 @@
     gap: 2rem;
 }
 
+@mixin slideResponsive {
+    border-radius: $border-small;
+    overflow: hidden;
+    object-fit: cover;
+    height: 40rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
 @mixin arrow {
     position: absolute;
     font-size: 3rem;
@@ -77,6 +87,11 @@
     z-index: 10;
     cursor: pointer;
     user-select: none;
+
+}
+
+@mixin box-shadow-1 {
+    box-shadow: rgba(0, 0, 0, 0.75) 15px 15px 15px;
 }
 
 // MAP GET FUNCTION 
