@@ -21,7 +21,16 @@
     }
 
     &-tags {
-        @include column-space-between;
+        @include row-space-between;
         gap: 5rem;
+        color: $color-white-2;
+
+        & li {
+            background-color: $color-primary;
+            padding: $padding-small;
+            width: 14rem;
+            border-radius: 1rem;
+            @include font-property-3;
+        }
     }
 }
