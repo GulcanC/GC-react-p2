@@ -15,7 +15,7 @@
 			"name": "Nathalie Jean",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
 		},
-		"rating": "4.4",
+		"rating": "2.4",
 		"location": "Ile de France - Paris 17e",
 		"equipments": [
 			"Équipements de base",
@@ -46,7 +46,7 @@
 			"name": "Della Case",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
 		},
-		"rating": "4.3",
+		"rating": "5",
 		"location": "Ile de France - Paris 10e",
 		"equipments": [
 			"Parking",
@@ -196,7 +196,7 @@
 			"name": "Hugo Perrier",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-4.jpg"
 		},
-		"rating": "3",
+		"rating": "3.3",
 		"location": "Ile de France - Paris 18e",
 		"equipments": [
 			"Salle de bains",
@@ -292,7 +292,7 @@
 			"name": "Adrien Chiran",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-6.jpg"
 		},
-		"rating": "3",
+		"rating": "3.4",
 		"location": "Ile de France - Paris 11e",
 		"equipments": [
 			"Vue Parc",

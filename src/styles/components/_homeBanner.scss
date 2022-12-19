@@ -6,7 +6,7 @@
     margin: 0 $margin-large 0 $margin-large;
 
     @include tablet-mobil {
-        margin: 0 $margin-large 0 $margin-large !important;
+        margin: 0 5rem !important;
     }
 
     &-img {

@@ -24,16 +24,19 @@ const MainPage = () => {
   let stars = [];
 
   // use push method to append all the filled whole stars
-  for (var i = rating; i >= 1; i--) stars.push(<BsStarFill />);
+  for (var i = 1; i <= rating; i++) {
+    console.log("i = " + i);
+    stars.push(<BsStarFill />);
+  }
+  console.log("i = " + i);
 
   // If there is a half a star, append it
-  if (i === 0.5) stars.push(<BsStarHalf />);
+  if (i - rating === 0.5) stars.push(<BsStarHalf />);
 
   // Fill the empty stars
   for (var j = 5 - rating; j >= 1; j--) stars.push(<BsStar />);
 
   // ACCORDION EQUIPMENTS
-
   const equipments = imageInf.equipments.map((equipment, i) => {
     return <li key={i}>{equipment}</li>;
   });
