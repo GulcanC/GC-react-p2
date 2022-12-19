@@ -66,4 +66,9 @@
         width: 8rem;
 
     }
+
+    &-rating {
+
+        @include font-property-main-location;
+    }
 }
