@@ -1,0 +1,23 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.about {
+
+    padding: 0 5rem;
+
+    &-img {
+
+        overflow: hidden;
+        object-fit: cover;
+        width: 100%;
+        height: 20rem;
+        border-radius: $border-small;
+
+        @include tablet-mobil {
+            height: 20rem;
+            width: 100%;
+
+        }
+
+    }
+}
