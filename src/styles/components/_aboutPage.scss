@@ -12,6 +12,8 @@
         width: 100%;
         height: 20rem;
         border-radius: $border-small;
+        margin-bottom: 3rem;
+
 
         @include tablet-mobil {
             height: 20rem;

@@ -17,4 +17,3 @@ export default accordionAbout;
 
 // burada accordionun acik olup olmamasina gore classname degisecek.
 // https://www.youtube.com/watch?v=jwp-cYZbgic
-// bu videodan bak

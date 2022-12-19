@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import SliderData from "../data/data.json";
 import Slide from "../components/slide";
 import { BsStarFill, BsStar, BsStarHalf } from "react-icons/bs";
+import AccordionDescription from "../components/accordionDescription";
 
 const MainPage = () => {
   // find id of the choosed image
@@ -13,7 +14,8 @@ const MainPage = () => {
   // find all information of the choosed image
   const imageInf = SliderData.find((card) => card.id === imageId.id);
   console.log(imageInf);
-  // rating
+
+  // RATING
 
   // Round to nearest half, because I want to use rating like 4.5, 3.5, ...
   // if rating is 2.1 or 2.2 it will convert to 2, but it is 2.3 or 2.4 it will convert it to 2.5
@@ -29,6 +31,12 @@ const MainPage = () => {
 
   // Fill the empty stars
   for (var j = 5 - rating; j >= 1; j--) stars.push(<BsStar />);
+
+  // ACCORDION EQUIPMENTS
+
+  const equipments = imageInf.equipments.map((equipment, i) => {
+    return <li key={i}>{equipment}</li>;
+  });
 
   return (
     <>
@@ -57,6 +65,14 @@ const MainPage = () => {
               </div>
               <div className="host-rating">{stars}</div>
             </div>
+          </div>
+
+          <div className="accordion-container">
+            <AccordionDescription
+              title="Description"
+              content={imageInf.description}
+            />
+            <AccordionDescription title="Equipments" content={equipments} />
           </div>
         </>
       )}
