@@ -1,0 +1,57 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.accordions {
+    width: 100%;
+}
+
+.accordion-title {
+    @include font-property-3;
+    position: relative;
+    transition: all 0.4s ease;
+    background-color: $color-primary;
+    border-radius: $border-small;
+    box-shadow: $box-shadow;
+    padding: $padding-small;
+
+}
+
+.accordion-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../../assets/arrow-down.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease-out;
+
+}
+
+.accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.4s ease-out;
+    background-color: $color-grey;
+    border-radius: $border-small;
+    box-shadow: $box-shadow;
+    padding: $padding-small;
+    font-size: medium;
+}
+
+.accordion.open .accordion-title::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.accordion.open .accordion-content {
+    max-height: 1000px;
+    opacity: 1;
+    background: $color-grey;
+    color: $color-primary;
+    margin-bottom: $margin-small;
+}
