@@ -8,13 +8,17 @@
     width: 100%;
     padding: 0 9rem;
 
+    @include tablet-mobil {
+        padding: 0 2rem !important;
+    }
+
     &-arrow-left {
         @include arrow;
         top: 50%;
         left: 10%;
 
         @include desktop {
-            left: 20%;
+            left: 15%;
         }
     }
 
@@ -24,7 +28,7 @@
         right: 10%;
 
         @include desktop {
-            right: 20%;
+            right: 15%;
         }
     }
 

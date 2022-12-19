@@ -1,48 +1,53 @@
 @import "../utils/variables";
 
-@mixin row-space-between {
+@mixin display-flex-row {
     display: flex;
     flex-direction: row;
+}
+
+@mixin display-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin row-space-between {
+    @include display-flex-row;
     justify-content: space-between;
     align-items: center;
-    gap: 5rem
+    gap: 2rem;
 }
 
 @mixin row-space-between-start {
-    display: flex;
-    flex-direction: row;
+    @include display-flex-row;
     justify-content: space-between;
     align-items: flex-start;
 
 }
 
 @mixin column-space-between {
-    display: flex;
-    flex-direction: column;
+    @include display-flex-column;
     justify-content: space-around;
     align-items: center;
 }
 
 @mixin column-flex-start {
-    display: flex;
-    flex-direction: column;
+    @include display-flex-column;
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
 }
 
 @mixin column-center {
-    display: flex;
-    flex-direction: column;
+    @include display-flex-column;
     justify-content: center;
     align-items: center;
     gap: 1.6rem;
 }
 
 @mixin flex-end {
-    display: flex;
+    @include display-flex-row;
     align-items: flex-end;
-    flex-direction: row;
+
 }
 
 @mixin font-property {
@@ -71,8 +76,8 @@
 }
 
 @mixin font-property-3 {
-    font-size: 1.7rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: 500;
     color: $color-white-2;
 }
 
@@ -165,6 +170,13 @@ $breakpoints: (
 
 @mixin normal {
     @media screen and (max-width:map-get($breakpoints, desktop)) and (min-width:map-get($breakpoints, screen-normal)) {
+        @content;
+
+    }
+}
+
+@mixin tablet-desktop {
+    @media screen and (max-width:map-get($breakpoints, screen-normal)) and (min-width:map-get($breakpoints, tablette)) {
         @content;
 
     }

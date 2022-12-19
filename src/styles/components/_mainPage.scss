@@ -4,12 +4,22 @@
 .image {
     &-info {
         @include row-space-between-start;
-        margin: 3rem 8.7rem;
+        margin: 3rem 8rem;
 
-        &-left {
-            @include column-flex-start;
+
+        @include desktop {
+            @include column-space-between;
+            flex-flow: wrap-reverse;
         }
 
+        &-left,
+        &-right {
+            @include column-flex-start;
+
+            @include tablet-mobil {
+                @include column-center;
+            }
+        }
     }
 
     &-title {
@@ -22,15 +32,38 @@
 
     &-tags {
         @include row-space-between;
-        gap: 5rem;
+        flex-flow: wrap;
+        gap: 2rem;
         color: $color-white-2;
+
+        @include tablet-mobil {
+            @include display-flex-column;
+
+        }
+
 
         & li {
             background-color: $color-primary;
-            padding: $padding-small;
-            width: 14rem;
+            padding: 1rem;
+            width: 15rem;
             border-radius: 1rem;
             @include font-property-3;
         }
+    }
+}
+
+.host {
+    @include row-space-between;
+
+
+
+    &-name {
+        @include font-property-main-location;
+    }
+
+    &-picture {
+        border-radius: 50%;
+        width: 8rem;
+
     }
 }

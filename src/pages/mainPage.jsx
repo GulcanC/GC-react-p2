@@ -3,6 +3,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import SliderData from "../data/data.json";
 import Slide from "../components/slide";
+import { BsStarFill, BsStar, BsStarHalf } from "react-icons/bs";
 
 const MainPage = () => {
   // find id of the choosed image
@@ -12,6 +13,22 @@ const MainPage = () => {
   // find all information of the choosed image
   const imageInf = SliderData.find((card) => card.id === imageId.id);
   console.log(imageInf);
+  // rating
+
+  // Round to nearest half, because I want to use rating like 4.5, 3.5, ...
+  // if rating is 2.1 or 2.2 it will convert to 2, but it is 2.3 or 2.4 it will convert it to 2.5
+  const rating = Math.round(imageInf.rating * 2) / 2;
+  console.log(rating);
+  let stars = [];
+
+  // use push method to append all the filled whole stars
+  for (var i = rating; i >= 1; i--) stars.push(<BsStarFill />);
+
+  // If there is a half a star, append it
+  if (i === 0.5) stars.push(<BsStarHalf />);
+
+  // Fill the empty stars
+  for (var j = 5 - rating; j >= 1; j--) stars.push(<BsStar />);
 
   return (
     <>
@@ -30,13 +47,15 @@ const MainPage = () => {
             </div>
 
             <div className="image-info-right">
-              <p className="host-name">{imageInf.host.name}</p>
-              <img
-                src={imageInf.host.picture}
-                alt=""
-                className="host-picture"
-              />
-              <span className="host-rating">{imageInf.rating}</span>
+              <div className="host">
+                <p className="host-name">{imageInf.host.name}</p>
+                <img
+                  src={imageInf.host.picture}
+                  alt="images"
+                  className="host-picture"
+                />
+              </div>
+              <div className="host-rating">{stars}</div>
             </div>
           </div>
         </>
