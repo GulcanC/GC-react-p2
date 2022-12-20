@@ -3,6 +3,7 @@ import { useState } from "react";
 import Data from "../data/collaps-data";
 import Image from "../assets/background-about.jpg";
 import AccordionAbout from "../components/accordionAbout";
+import Navbar from "../layout/navbar";
 
 const AboutPage = () => {
   const [data, setData] = useState(Data);
@@ -20,6 +21,7 @@ const AboutPage = () => {
   };
   return (
     <>
+      <Navbar />
       <div className="about">
         <img src={Image} alt="about page img" className="about-img" />
         <div className="accordions">

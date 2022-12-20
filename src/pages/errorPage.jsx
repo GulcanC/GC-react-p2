@@ -1,14 +1,18 @@
 import React from "react";
-import { Navlink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { TbFaceIdError } from "react-icons/tb";
 
 const ErrorPage = () => {
   return (
     <div className="error-page">
-      <h1>404 ERROR PAGE</h1>
-      <p>Soory, This page does not exist</p>
-      <Navlink to="/" className="link">
-        Go Back
-      </Navlink>
+      <TbFaceIdError className="error-icon" />
+      <h1>404 Error!</h1>
+      <p>Sorry, This page does not exist !!!</p>
+      <div className="error-link">
+        <NavLink to="/" className="error-link">
+          Go Back to Home Page &rarr;
+        </NavLink>
+      </div>
     </div>
   );
 };

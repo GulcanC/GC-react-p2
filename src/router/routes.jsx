@@ -4,6 +4,7 @@ import Layout from "../layout/layout";
 import HomePage from "../pages/homePage";
 import MainPage from "../pages/mainPage";
 import AboutPage from "../pages/aboutPage";
+import ErrorPage from "../pages/errorPage";
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
           <Route path="/home" element={<HomePage />} />
           <Route path="/card/:id" element={<MainPage />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Layout>
     </HashRouter>

@@ -5,9 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <img src={Logo} alt="footer-logo-kasa" className="footer_img" />
-      <p className="footer-text">
-        Gulcan COSKUN | OpenClassrooms Project | December, 2022
-      </p>
+      <p className="footer-text">Gulcan COSKUN | December, 2022</p>
     </footer>
   );
 };

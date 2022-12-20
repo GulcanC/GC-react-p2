@@ -5,6 +5,7 @@ import SliderData from "../data/data.json";
 import Slide from "../components/slide";
 import { BsStarFill, BsStar, BsStarHalf } from "react-icons/bs";
 import AccordionDescription from "../components/accordionDescription";
+import Navbar from "../layout/navbar";
 
 const MainPage = () => {
   // find id of the choosed image
@@ -43,6 +44,7 @@ const MainPage = () => {
 
   return (
     <>
+      <Navbar />
       {imageInf && (
         <>
           <Slide slides={imageInf.pictures} />
