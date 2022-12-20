@@ -77,7 +77,7 @@
 }
 
 .accordion-container {
-    @include row-space-between;
+    @include row-space-between-start;
     margin: 0 8rem;
 
     @include tablet-mobil {
