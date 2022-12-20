@@ -32,10 +32,12 @@
     }
 
     &-tags {
+
         @include row-space-between;
         flex-flow: wrap;
         gap: 2rem;
         color: $color-white-2;
+
 
         @include tablet-mobil {
             @include display-flex-column;
@@ -47,7 +49,8 @@
             background-color: $color-primary;
             padding: 1rem;
             width: 15rem;
-            border-radius: 1rem;
+            border-radius: $border-small;
+            box-shadow: $box-shadow;
             @include font-property-3;
         }
     }
@@ -56,8 +59,6 @@
 .host {
     @include row-space-between;
 
-
-
     &-name {
         @include font-property-main-location;
     }
@@ -65,6 +66,7 @@
     &-picture {
         border-radius: 50%;
         width: 8rem;
+        box-shadow: $box-shadow;
 
     }
 
@@ -72,4 +74,15 @@
 
         @include font-property-main-location;
     }
+}
+
+.accordion-container {
+    @include row-space-between;
+    margin: 0 8rem;
+
+    @include tablet-mobil {
+        @include column-center;
+
+    }
+
 }

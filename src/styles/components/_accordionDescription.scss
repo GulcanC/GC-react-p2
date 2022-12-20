@@ -1,0 +1,66 @@
+.accordion-main {
+
+    &-container {
+        margin-bottom: 3rem;
+        box-shadow: $box-shadow;
+    }
+
+    &-header {
+        @include row-space-between;
+        background: $color-primary;
+        border-radius: $border-small;
+        width: 40rem;
+        height: 5rem;
+
+        @include desktop {
+            width: 30rem;
+        }
+
+
+    }
+
+    &-title {
+        @include font-property-3;
+        margin-left: 2rem;
+    }
+
+    &-arrow-down {
+        margin-right: 2rem;
+        transition: all 0.5s ease-out;
+
+
+        & img {
+            width: 2.5rem;
+            height: 2.5rem;
+
+        }
+    }
+
+    &-arrow-down:hover {
+        cursor: pointer;
+    }
+
+    &-arrow-down.true {
+        transform: rotate(-180deg);
+
+    }
+
+    &-content {
+        color: $color-primary;
+        font-size: medium;
+        width: 40rem;
+        height: auto;
+        padding: 2.5rem 1rem;
+        background-color: $color-grey;
+        text-align: left;
+        list-style-type: none;
+
+        @include desktop {
+            width: 30rem;
+        }
+
+
+
+
+    }
+}
