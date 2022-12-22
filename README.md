@@ -2,10 +2,17 @@
 
 # Create a real estate rental web application with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visit project URL
 
-# The Objectives of the Project
-:pencil:
+🌐 https://gcoskun-react-app.web.app/
+
+## The Objectives of the Project
+
+🌟 Initialize an app with Create React App
+
+🌟 Develop website interface elements using React components
+
+🌟 Configure app page navigation with React Router
 
 ## Available Scripts
 
