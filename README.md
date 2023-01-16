@@ -18,7 +18,9 @@
 
 🌟 Create the cards component, when we click a single card, we will go through the single card page, for doing this use NavLink react router component
 
-🌟 Use router component like Routes, Router, Navigate, ...
+🌟 Create slider component, use useState hook to state management
+
+🌟 Use map() method to store the data in the form of key and value pairs
 
 🌟 Use Sass to style application
 
