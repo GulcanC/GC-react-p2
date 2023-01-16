@@ -20,7 +20,7 @@
 
 🌟 Create slider component, use useState hook to state management
 
-🌟 Use map() method to store the data in the form of key and value pairs
+🌟 Use map() method to store the data in the form of key and value pairs,  each pair has a unique key in a map
 
 🌟 Use Sass to style application
 
