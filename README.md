@@ -12,9 +12,13 @@
 
 🌟 Create a JSON file which includes the data
 
+🌟 Configure app page navigation with React Router
+
+🌟 Use router component like Routes, Router, ...
+
 🌟 Develop website interface elements using React components
 
-🌟 Configure app page navigation with React Router
+
 
 ## Available Scripts
 
