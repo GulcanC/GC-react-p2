@@ -14,7 +14,7 @@
 
 🌟 Configure app page navigation with React Router
 
-🌟 Use router component like Routes, Router, ...
+🌟 Use router component like Routes, Router, Navigate, ...
 
 🌟 Develop website interface elements using React components
 
