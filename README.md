@@ -16,6 +16,8 @@
 
 🌟 Use router component like Routes, Router, Navigate, ...
 
+🌟 Use Sass to style application
+
 🌟 Develop website interface elements using React components
 
 
