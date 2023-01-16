@@ -6,7 +6,7 @@
 
 🌐 https://gcoskun-react-app.web.app/
 
-## The Objectives of the Project
+## The Steps of the Project
 
 🌟 Initialize an app with Create React App
 
@@ -17,6 +17,8 @@
 🌟 Use router component like Routes, Router, Navigate, NavLink...
 
 🌟 Create the cards component, when we click a single card, we will go through the single card page, for doing this use NavLink react router component
+
+🌟 Use router component like Routes, Router, Navigate, ...
 
 🌟 Use Sass to style application
 
