@@ -22,6 +22,8 @@
 
 🌟 Use map() method to store the data in the form of key and value pairs,  each pair has a unique key in a map
 
+🌟 Create accordion, use useState hook, import data from json file, create a function to open and close accordion, use onClick() event
+
 🌟 Use Sass to style application
 
 🌟 Develop website interface elements using React components
