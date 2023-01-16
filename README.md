@@ -10,6 +10,8 @@
 
 🌟 Initialize an app with Create React App
 
+🌟 Create a JSON file which includes the data
+
 🌟 Develop website interface elements using React components
 
 🌟 Configure app page navigation with React Router
