@@ -14,7 +14,9 @@
 
 🌟 Configure app page navigation with React Router
 
-🌟 Use router component like Routes, Router, Navigate, ...
+🌟 Use router component like Routes, Router, Navigate, NavLink...
+
+🌟 Create the cards component, when we click a single card, we will go through the single card page, for doing this use NavLink react router component
 
 🌟 Use Sass to style application
 
